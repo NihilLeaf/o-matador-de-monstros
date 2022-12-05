@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+html {
+    background-color: #a9a994;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    margin: 10px;
+    padding: 20px;
+    background-color: #d2bc76;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+}
+
+.score {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.score h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.life-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #f0d696;
+    border: 1px solid #e6d1a1;
+    border-radius: 10px;
+}
+
+.life-bar .life {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: green;
+}
+
+.life-bar .danger {
+    background-color: #944431;
+}
+
+.result {
+    background-color: #f1e2be;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.result .win {
+    color: green;
+}
+
+.result .lose {
+    color: #944431;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.start-game {
+    background-color: #944431;
+    color: white;
+}
+
+.attack {
+    background-color: #944431;
+    color: white;
+}
+
+.special-attack {
+    background-color: #886243;
+    color: #fff;
+}
+
+.heal {
+    background-color: green;
+    color: #fff;
+}
+
+.buttons .btn:hover {
+    filter: brightness(90%);
+}
